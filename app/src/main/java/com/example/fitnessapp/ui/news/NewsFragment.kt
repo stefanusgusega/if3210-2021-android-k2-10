@@ -1,4 +1,4 @@
-package com.example.fitnessapp.ui.notifications
+package com.example.fitnessapp.ui.news
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.fitnessapp.R
 
-class NotificationsFragment : Fragment() {
+class NewsFragment : Fragment() {
 
-    private lateinit var notificationsViewModel: NotificationsViewModel
+    private lateinit var newsViewModel: NewsViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        notificationsViewModel =
-                ViewModelProvider(this).get(NotificationsViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_notifications, container, false)
-        val textView: TextView = root.findViewById(R.id.text_notifications)
-        notificationsViewModel.text.observe(viewLifecycleOwner, Observer {
+        newsViewModel =
+                ViewModelProvider(this).get(NewsViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_news, container, false)
+        val textView: TextView = root.findViewById(R.id.text_news)
+        newsViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

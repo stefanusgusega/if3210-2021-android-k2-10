@@ -1,4 +1,4 @@
-package com.example.fitnessapp.ui.home
+package com.example.fitnessapp.ui.tracker
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.fitnessapp.R
 
-class HomeFragment : Fragment() {
+class TrackerFragment : Fragment() {
 
-    private lateinit var homeViewModel: HomeViewModel
+    private lateinit var trackerViewModel: TrackerViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        homeViewModel =
-                ViewModelProvider(this).get(HomeViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_home, container, false)
-        val textView: TextView = root.findViewById(R.id.text_home)
-        homeViewModel.text.observe(viewLifecycleOwner, Observer {
+        trackerViewModel =
+                ViewModelProvider(this).get(TrackerViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_tracker, container, false)
+        val textView: TextView = root.findViewById(R.id.text_dashboard)
+        trackerViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root
