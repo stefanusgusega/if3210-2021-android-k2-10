@@ -18,8 +18,14 @@
         tools:layout="@layout/fragment_tracker" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_history"
         android:name="com.example.fitnessapp.ui.history.HistoryFragment"
         android:label="@string/title_history"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/navigation_scheduler"
+        android:name="com.example.fitnessapp.ui.history.SchedulerFragment"
+        android:label="@string/title_scheduler"
+        tools:layout="@layout/fragment_scheduler" />
 </navigation>
