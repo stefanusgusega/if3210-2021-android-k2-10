@@ -22,7 +22,7 @@ class TrackerFragment : Fragment() {
         trackerViewModel =
                 ViewModelProvider(this).get(TrackerViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_tracker, container, false)
-        val textView: TextView = root.findViewById(R.id.text_dashboard)
+        val textView: TextView = root.findViewById(R.id.text_tracker)
         trackerViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
