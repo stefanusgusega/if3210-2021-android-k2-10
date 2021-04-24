@@ -25,7 +25,7 @@
 
     <fragment
         android:id="@+id/navigation_scheduler"
-        android:name="com.example.fitnessapp.ui.history.SchedulerFragment"
+        android:name="com.example.fitnessapp.ui.scheduler.SchedulerFragment"
         android:label="@string/title_scheduler"
         tools:layout="@layout/fragment_scheduler" />
 </navigation>
