@@ -22,9 +22,9 @@ class NewsFragment : Fragment() {
         newsViewModel =
                 ViewModelProvider(this).get(NewsViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_news, container, false)
-        val textView: TextView = root.findViewById(R.id.text_news)
+//        val textView: TextView = root.findViewById(R.id.text_news)
         newsViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
+//            textView.text = it
         })
         return root
     }
