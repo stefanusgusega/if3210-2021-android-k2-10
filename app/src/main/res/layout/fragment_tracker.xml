@@ -6,17 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".ui.tracker.TrackerFragment">
 
-    <TextView
-        android:id="@+id/text_tracker"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".15">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="32pt"
+            android:layout_height="32pt"
+            android:src="@drawable/ic_baseline_directions_bike_24" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="32pt"
+            android:layout_height="32pt"
+            android:src="@drawable/ic_baseline_directions_walk_24" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/tracker_start_button"
+        android:layout_width="256dp"
+        android:layout_height="128dp"
+        android:text="@string/tracker_start_tracking"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".85" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

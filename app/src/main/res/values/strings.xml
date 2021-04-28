@@ -4,4 +4,7 @@
     <string name="title_tracker">Tracker</string>
     <string name="title_history">History</string>
     <string name="title_scheduler">Scheduler</string>
+    <string name="no_location_text">No current location</string>
+    <string name="tracker_stop_tracking">Stop</string>
+    <string name="tracker_start_tracking">Start</string>
 </resources>
