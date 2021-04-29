@@ -4,7 +4,9 @@ Ini deskripsi aplikasi
 ## Cara Kerja
 Ini cara kerja terutama mengenai pemenuhan spesifikasi
 ## Library yang Digunakan
-Ini <i>library</i> yang digunakan dan justifikasi penggunaannya
+- **Retrofit**, digunakan untuk *fetch* JSON yang ada di API yang sudah disediakan oleh spesifikasi.
+- **Gson**, digunakan untuk *parsing* JSON.
+- **Picasso**, digunakan untuk menampilkan *thumbnail* dari berita.
 ## <i>Screenshot</i> Aplikasi
 Ini nanti isinya screenshot
 ## Pembagian Kerja Anggota Kelompok
@@ -15,5 +17,5 @@ Ini nanti isinya screenshot
     - Carry
     - Carry
 - 13518149 Stefanus Gusega Gunawan:
-    - Ngapain
+    - Mengerjakan *News Fragment*
     - Ngapain
