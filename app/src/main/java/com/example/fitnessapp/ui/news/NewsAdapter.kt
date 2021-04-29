@@ -1,5 +1,6 @@
 package com.example.fitnessapp.ui.news
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,11 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.fitnessapp.R
 import com.squareup.picasso.Picasso
 
-class NewsAdapter(private val responses: NewsResponse) : RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
-    inner class NewsViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
-
-    }
-
+class NewsAdapter(private val responses: NewsResponse) : RecyclerView.Adapter<NewsViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_news, parent, false)
         return NewsViewHolder(view)
@@ -32,8 +29,8 @@ class NewsAdapter(private val responses: NewsResponse) : RecyclerView.Adapter<Ne
         // thumbnail image
         val thumbnail = holder.itemView.findViewById<ImageView>(R.id.imageView_thumbnail)
         Picasso.with(holder.itemView.context).load(news.urlToImage).into(thumbnail)
+
+        // webview
+        holder.news = news
     }
-
-
-
 }
