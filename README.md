@@ -43,3 +43,4 @@ Ketika pertama membuka aplikasi, *user* akan disambut langsung dengan halaman *n
     - Mengerjakan *Training Tracker*
 - 13518149 Stefanus Gusega Gunawan:
     - Mengerjakan *News Fragment*
+    - Mengerjakan *History Layout*
