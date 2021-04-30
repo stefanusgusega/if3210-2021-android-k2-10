@@ -18,8 +18,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tracker_info_map" />
 
-    <com.google.android.gms.maps.MapView
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/tracker_info_map"
+        android:tag="tracker_map_fragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="0dp"
         android:layout_height="256dp"
         android:layout_marginStart="32dp"
