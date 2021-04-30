@@ -4,4 +4,5 @@
     <string name="title_tracker">Tracker</string>
     <string name="title_history">History</string>
     <string name="title_scheduler">Scheduler</string>
+    <string name="add_schedule">Add Schedule</string>
 </resources>

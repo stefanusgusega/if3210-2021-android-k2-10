@@ -19,6 +19,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ui.scheduler.ScheduleActivity"
+            android:label="Here is your schedule">
+        </activity>
     </application>
 
 </manifest>
