@@ -20,6 +20,17 @@ Ketika pertama membuka aplikasi, *user* akan disambut langsung dengan halaman *n
 <img src="./images/news-web-view.jpg" width=200>
 </p>
 
+- Tampilan *Training Tracker*.
+<p align="center">
+<img src="./images/tracker-main.png" width = 200>
+<img src="./images/tracker-info.png" width = 200>
+</p>
+
+- Tampilan *Training History*.
+<p align="center">
+<img src="./images/history-main.png" width = 200>
+</p>
+
 ## Pembagian Kerja Anggota Kelompok
 - 13518092 Izharulhaq:
     - Mengerjakan *Training Scheduler*
