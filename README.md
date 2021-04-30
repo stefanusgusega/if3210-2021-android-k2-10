@@ -2,7 +2,7 @@
 ## Deskripsi Aplikasi
 Repository yang berisi aplikasi workout berbasis Android yang dibangun dengan Kotlin. Aplikasi dibangun sebagai tugas sangat sangat sangat besar mata kuliah IF3210. Aplikasi Workout ini sudah membuat para developernya fit arena saat developnya aja rasanya sudah workout.
 ## Cara Kerja
-Ketika pertama membuka aplikasi, *user* akan disambut langsung dengan halaman *news* yang berisikan kumpulan berita-berita olahraga terbaru yang dihimpun dari <https://www.newsapi.org>. Lalu, ketika pengguna memencet salah satu dari berita akan keluar tampilan *web* yang bisa dibaca oleh pengguna. Lalu, ketika *handphone* dimiringkan (*landscape*), maka akan tampil dengan tampilan dua kolom. Lalu, untuk menu/halaman *tracker*, pengguna dapat memilih antara mode bersepeda ataupun mode berlari. Ketika *tracking* selesai, pengguna dapat melihat jarak tempuh untuk mode sepeda dan jumlah langkah untuk mode lari. Di menu utama *tracker* pengguna juga dapat melihat kompas. Lalu, untuk menu/halaman *history*, pengguna dapat melihat sebuah kalender tanpa fungsionalitas (hehe punten kak) Lalu, untuk menu/halaman *scheduler*, ....
+Ketika pertama membuka aplikasi, *user* akan disambut langsung dengan halaman *news* yang berisikan kumpulan berita-berita olahraga terbaru yang dihimpun dari <https://www.newsapi.org>. Lalu, ketika pengguna memencet salah satu dari berita akan keluar tampilan *web* yang bisa dibaca oleh pengguna. Lalu, ketika *handphone* dimiringkan (*landscape*), maka akan tampil dengan tampilan dua kolom. Lalu, untuk menu/halaman *tracker*, pengguna dapat memilih antara mode bersepeda ataupun mode berlari. Ketika *tracking* selesai, pengguna dapat melihat jarak tempuh untuk mode sepeda dan jumlah langkah untuk mode lari. Di menu utama *tracker* pengguna juga dapat melihat kompas. Lalu, untuk menu/halaman *history*, pengguna dapat melihat sebuah kalender tanpa fungsionalitas (hehe punten kak) Lalu, untuk menu/halaman *scheduler*, pengguna dapat melihat tampilan jadwal latihan yang masih kosong (hehe punten lagi kak).
 ## *Library* yang digunakan dan penggunaannya
 - **Retrofit**, digunakan untuk *fetch* JSON yang disediakan oleh [API berikut](https://www.newsapi.org).
 - **Gson**, digunakan untuk *parsing* JSON.
@@ -29,6 +29,11 @@ Ketika pertama membuka aplikasi, *user* akan disambut langsung dengan halaman *n
 - Tampilan *Training History*.
 <p align="center">
 <img src="./images/history-main.png" width = 200>
+</p>
+
+- Tampilan *Scheduler*
+<p align="center">
+<img src="./images/scheduler_main.png" width=200>
 </p>
 
 ## Pembagian Kerja Anggota Kelompok
