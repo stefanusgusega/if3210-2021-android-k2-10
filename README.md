@@ -10,7 +10,16 @@ Ketika pertama membuka aplikasi, *user* akan disambut langsung dengan halaman *n
 - **Google Play Service**, digunakan untuk menampilkan peta statik.
 ## <i>Screenshot</i> Aplikasi
 - Tampilan halaman *news* baik *portrait* maupun *landscape*.
+<p align="center">
+<img src="./images/news-portrait.jpg" width=200>
+<img src="./images/news-landscape.jpg" height=200>
+</p>
+
 - Tampilan *WebView* dari berita yang dipilih.
+<p align="center">
+<img src="./images/news-web-view.jpg" width=200>
+</p>
+
 ## Pembagian Kerja Anggota Kelompok
 - 13518092 Izharulhaq:
     - Ngapain
