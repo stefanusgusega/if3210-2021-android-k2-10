@@ -11,8 +11,8 @@ Ketika pertama membuka aplikasi, *user* akan disambut langsung dengan halaman *n
 ## <i>Screenshot</i> Aplikasi
 - Tampilan halaman *news* baik *portrait* maupun *landscape*.
 <p align="center">
-<img src="./images/news-portrait.jpg" width=200>
-<img src="./images/news-landscape.jpg" height=200>
+<img src="./images/news-portrait.png" width=200>
+<img src="./images/news-landscape.png" height=200>
 </p>
 
 - Tampilan *WebView* dari berita yang dipilih.
