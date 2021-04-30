@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.news.WebViewActivity"
-            android:label="Web View News"
+            android:label="Here Is Your News"
             android:launchMode="singleTop">
             <meta-data android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity"/>
