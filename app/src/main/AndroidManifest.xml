@@ -40,6 +40,11 @@
                 android:value=".MainActivity"/>
         </activity>
 
+        <activity
+            android:name=".ui.scheduler.ScheduleActivity"
+            android:label="Here is your schedule">
+        </activity>
+
         <service
             android:name="com.example.fitnessapp.ui.tracker.TrackerService"
             android:enabled="true"
