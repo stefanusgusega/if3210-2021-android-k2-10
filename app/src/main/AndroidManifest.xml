@@ -19,7 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.news.WebViewActivity"
+        <activity android:name=".ui.news.WebViewFragment"
             android:label="Web View News"
             android:launchMode="singleTop">
             <meta-data android:name="android.support.PARENT_ACTIVITY"
