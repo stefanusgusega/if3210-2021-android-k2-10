@@ -9,7 +9,8 @@ Ketika pertama membuka aplikasi, *user* akan disambut langsung dengan halaman *n
 - **Picasso**, digunakan untuk menampilkan *thumbnail* dari berita.
 - **Google Play Service**, digunakan untuk menampilkan peta statik.
 ## <i>Screenshot</i> Aplikasi
-Ini nanti isinya screenshot
+- Tampilan halaman *news* baik *portrait* maupun *landscape*.
+- Tampilan *WebView* dari berita yang dipilih.
 ## Pembagian Kerja Anggota Kelompok
 - 13518092 Izharulhaq:
     - Ngapain
