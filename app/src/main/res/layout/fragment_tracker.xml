@@ -18,13 +18,13 @@
         app:layout_constraintVertical_bias=".15">
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/bike_mode_button"
             android:layout_width="32pt"
             android:layout_height="32pt"
             android:src="@drawable/ic_baseline_directions_bike_24" />
 
         <ImageButton
-            android:id="@+id/imageButton2"
+            android:id="@+id/run_mode_button"
             android:layout_width="32pt"
             android:layout_height="32pt"
             android:src="@drawable/ic_baseline_directions_walk_24" />
@@ -41,5 +41,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias=".85" />
+
+    <ImageView
+        android:id="@+id/compassImage"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:src="@drawable/ic_compass_arrow"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tracker_mode_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/tracker_mode_run"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

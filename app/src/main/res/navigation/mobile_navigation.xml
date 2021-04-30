@@ -15,7 +15,11 @@
         android:id="@+id/navigation_tracker"
         android:name="com.example.fitnessapp.ui.tracker.TrackerFragment"
         android:label="@string/title_tracker"
-        tools:layout="@layout/fragment_tracker" />
+        tools:layout="@layout/fragment_tracker" >
+        <action
+            android:id="@+id/next_action"
+            app:destination="@id/trackerInfoFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_history"
@@ -28,4 +32,9 @@
         android:name="com.example.fitnessapp.ui.scheduler.SchedulerFragment"
         android:label="@string/title_scheduler"
         tools:layout="@layout/fragment_scheduler" />
+    <fragment
+        android:id="@+id/trackerInfoFragment"
+        android:name="com.example.fitnessapp.ui.trackerinfo.TrackerInfoFragment"
+        android:label="fragment_tracker_info"
+        tools:layout="@layout/fragment_tracker_info" />
 </navigation>

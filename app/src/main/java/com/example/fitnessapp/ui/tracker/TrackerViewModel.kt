@@ -6,8 +6,12 @@ import androidx.lifecycle.ViewModel
 
 class TrackerViewModel : ViewModel() {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is training tracker"
+    val state = MutableLiveData<Int>().apply {
+        value = RUN_MODE
     }
-    val text: LiveData<String> = _text
+
+    companion object {
+        const val BIKE_MODE = 0
+        const val RUN_MODE = 1
+    }
 }

@@ -13,9 +13,13 @@ import android.util.Log
 import androidx.core.app.NotificationCompat
 import androidx.core.content.edit
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
+import com.example.fitnessapp.FitnessApplication
 import com.example.fitnessapp.MainActivity
 import com.example.fitnessapp.R
+import com.example.fitnessapp.storage.route.RoutePoint
+import com.example.fitnessapp.storage.FitnessRepository
 import com.google.android.gms.location.*
+import kotlinx.coroutines.launch
 import java.util.concurrent.TimeUnit
 
 class TrackerService : Service() {
@@ -25,6 +29,10 @@ class TrackerService : Service() {
     private var serviceRunningInForeground = false
 
     private val localBinder = LocalBinder()
+
+    private var runId = 0;
+    private var pointId = 0;
+    private lateinit var repository: FitnessRepository
 
     private lateinit var notificationManager: NotificationManager
 
@@ -38,6 +46,8 @@ class TrackerService : Service() {
 
     override fun onCreate() {
         Log.d(TAG, "onCreate()")
+
+        repository = (application as FitnessApplication).repository
 
         notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
 
@@ -63,6 +73,17 @@ class TrackerService : Service() {
                 val intent = Intent(ACTION_FOREGROUND_ONLY_LOCATION_BROADCAST)
                 intent.putExtra(EXTRA_LOCATION, currentLocation)
                 LocalBroadcastManager.getInstance(applicationContext).sendBroadcast(intent)
+
+                (application as FitnessApplication).applicationScope.launch {
+                    Log.d(TAG, "Location saved to run: ${repository.runDao.getNewRunId()}")
+                    val routePoint = RoutePoint(
+                        repository.runDao.getNewRunId(),
+                        pointId,
+                        locationResult.lastLocation.latitude,
+                        locationResult.lastLocation.longitude)
+                    repository.insert(routePoint)
+                    pointId++
+                }
 
                 if (serviceRunningInForeground) {
                     notificationManager.notify(
