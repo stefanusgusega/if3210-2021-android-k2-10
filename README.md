@@ -22,11 +22,8 @@ Ketika pertama membuka aplikasi, *user* akan disambut langsung dengan halaman *n
 
 ## Pembagian Kerja Anggota Kelompok
 - 13518092 Izharulhaq:
-    - Ngapain
-    - Ngapain
+    - Mengerjakan *Training Scheduler*
 - 13518107 Chokyi Ozer:
     - Mengerjakan *Training Tracker*
-    - Carry
 - 13518149 Stefanus Gusega Gunawan:
     - Mengerjakan *News Fragment*
-    - Ngapain
